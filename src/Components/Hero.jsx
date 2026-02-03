@@ -2,15 +2,16 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { motion } from "framer-motion"; // لإضافة أنيميشن احترافي
-import img2 from "../assets/Silder/Gemini_Generated_Image_bw833fbw833fbw83.jpeg";
-import img1 from "../assets/Silder/Gemini_Generated_Image_w9ztrzw9ztrzw9zt.jpeg";
-import img3 from "../assets/Silder/Gemini_Generated_Image_wfyoahwfyoahwfyo.jpeg";
+import img2 from "../assets/Silder/WhatsApp Image 2026-01-29 at 9.08.34 PM.jpeg";
+import img1 from "../assets/Silder/WhatsApp Image 2026-01-29 at 9.08.53 PM.jpeg";
+import img3 from "../assets/Silder/WhatsApp Image 2026-01-29 at 9.08.54 PM.jpeg";
 
 // ستايلات Swiper
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const HeroServices = () => {
   const services = [
@@ -62,9 +63,9 @@ const HeroServices = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover  bg-fixed transition-transform duration-[6000ms] scale-110 hover:scale-100"
+                className="w-full h-full object-cover  bg-fixed transition-transform duration-700 scale-110 hover:scale-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-0 from-black/80 via-black/50 to-transparent"></div>
             </div>
 
             {/* المحتوى */}
@@ -94,12 +95,30 @@ const HeroServices = () => {
                   </p>
 
                   <div className="flex gap-4">
-                    <button className="px-10 py-4 bg-[#ec6434] cursor-pointer hover:bg-[#ec6434]/50 text-white rounded-md font-bold transition-all shadow-xl hover:-translate-y-1">
+                    <Link
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: "smooth",
+                        });
+                      }}
+                      to={"/contact"}
+                      className="px-10 py-4 bg-[#ec6434] cursor-pointer hover:bg-[#ec6434]/50 text-white rounded-md font-bold transition-all shadow-xl hover:-translate-y-1"
+                    >
                       طلب الخدمة
-                    </button>
-                    <button className="px-10 py-4 border border-white/30 text-white  cursor-pointer hover:text-[#ec6434] rounded-md font-bold transition-all">
+                    </Link>
+                    <Link
+                      onClick={() => {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: "smooth",
+                        });
+                      }}
+                      to={"/projects"}
+                      className="px-10 py-4 border border-white/30 text-white  cursor-pointer hover:text-[#ec6434] rounded-md font-bold transition-all"
+                    >
                       رؤية المزيد
-                    </button>
+                    </Link>
                   </div>
                 </motion.div>
               </div>

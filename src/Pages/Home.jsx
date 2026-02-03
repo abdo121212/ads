@@ -1,6 +1,5 @@
 import Hero from "../Components/Hero";
 
-import About from "./About";
 import Features from "../Components/Features";
 
 import Steps from "../Components/Steps";

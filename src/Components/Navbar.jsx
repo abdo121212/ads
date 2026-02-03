@@ -16,11 +16,6 @@ const Navbar = () => {
       <nav className="bg-white shadow-md fixed w-full z-50 rounded-b-lg ">
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex justify-between  items-center h-20">
-            {/* Logo - جهة اليمين أو اليسار حسب لغة الموقع */}
-            <Link to={"/"} className=" cursor-pointer ">
-              <img src={logo} alt="logo" width={120} />
-            </Link>
-
             {/* Desktop Links - تظهر في الشاشات الكبيرة فقط */}
             <div
               onClick={() => {
@@ -50,6 +45,11 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+
+            {/* Logo - جهة اليمين أو اليسار حسب لغة الموقع */}
+            <Link to={"/"} className=" cursor-pointer ">
+              <img src={logo} alt="logo" width={120} />
+            </Link>
 
             {/* Mobile Menu Button - يظهر في الجوال فقط */}
             <div className="md:hidden flex items-center">

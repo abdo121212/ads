@@ -1,34 +1,15 @@
-import image2 from "../assets/Partners/download__10_-removebg-preview.WebP";
-import image4 from "../assets/Partners/download__12_-removebg-preview.WebP";
-import image7 from "../assets/Partners/download__16_-removebg-preview.WebP";
-import image8 from "../assets/Partners/download__17_-removebg-preview.WebP";
-import image9 from "../assets/Partners/download__19_-removebg-preview.WebP";
-import image10 from "../assets/Partners/download__20_-removebg-preview.WebP";
-import image11 from "../assets/Partners/pelco-logo-png_seeklogo-107217-removebg-preview.WebP";
-import image14 from "../assets/Partners/download__3_-removebg-preview.WebP";
-import image15 from "../assets/Partners/download__4_-removebg-preview.WebP";
-import image16 from "../assets/Partners/download__5_-removebg-preview.WebP";
-import image18 from "../assets/Partners/download__7_-removebg-preview.WebP";
-import image21 from "../assets/Partners/download__21_-removebg-preview.WebP";
-
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import img1 from "../assets/Partners/1636873884225.jfif";
+import img2 from "../assets/Partners/download.png";
+import img3 from "../assets/Partners/download.png";
 
 const Partners = () => {
   const partners = [
-    { id: 10, image: image10, name: "Partner 10" },
-    { id: 11, image: image11, name: "Pelco" },
-    { id: 14, image: image14, name: "Partner 14" },
-    { id: 16, image: image16, name: "Partner 16" },
-    { id: 18, image: image18, name: "Partner 18" },
-    { id: 21, image: image21, name: "Partner 21" },
-    { id: 2, image: image2, name: "Partner 2" },
-    { id: 4, image: image4, name: "Partner 4" },
-    { id: 7, image: image7, name: "Partner 7" },
-    { id: 8, image: image8, name: "Partner 8" },
-    { id: 15, image: image15, name: "Partner 15" },
+    { id: 1, image: img3, name: "Partner 10" },
+    { id: 2, image: img1, name: "Pelco" },
 
-    { id: 9, image: image9, name: "Partner 9" },
+    { id: 3, image: img2, name: "Partner 2" },
   ];
 
   return (

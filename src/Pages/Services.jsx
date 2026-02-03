@@ -10,6 +10,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -129,13 +130,18 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA بسيط وراقي */}
-        <div className="mt-20 text-center">
-          <button className="group relative overflow-hidden bg-slate-900 text-white px-12 py-5 rounded-full font-bold text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
-            <span className="relative z-10 ">ابدأ رحلة الإبهار معنا</span>
-            <div className="absolute inset-0 bg-[#f7aa3d] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-          </button>
-        </div>
+        <Link
+          to={"/contact"}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          {/* CTA بسيط وراقي */}
+          <div className="mt-20 text-center ">
+            <button className="group relative overflow-hidden bg-slate-900 text-white px-12 py-5 rounded-full font-bold text-xl shadow-xl transition-all hover:scale-105 active:scale-95">
+              <span className="relative z-10 ">ابدأ رحلة الإبهار معنا</span>
+              <div className="absolute inset-0 bg-[#f7aa3d] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            </button>
+          </div>
+        </Link>
       </div>
     </section>
   );
